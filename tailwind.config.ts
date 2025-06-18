@@ -53,20 +53,20 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// FrosiReps custom colors
-				'frosi-dark': '#0A0E1A',
-				'frosi-navy': '#1A1B2E',
-				'frosi-purple': '#8A2BE2',
-				'frosi-blue': '#4F46E5',
-				'frosi-accent': '#E91E63',
-				'frosi-glass': 'rgba(255, 255, 255, 0.05)',
+				// FrosiReps monochrome colors
+				'frosi-black': '#0A0A0A',
+				'frosi-dark': '#171717',
+				'frosi-gray': '#262626',
+				'frosi-light': '#737373',
+				'frosi-white': '#FAFAFA',
+				'frosi-accent': '#FFFFFF',
 			},
 			fontFamily: {
 				'inter': ['Inter', 'sans-serif'],
 			},
 			backgroundImage: {
-				'gradient-frosi': 'linear-gradient(135deg, #8A2BE2 0%, #4F46E5 100%)',
-				'gradient-frosi-hover': 'linear-gradient(135deg, #9A3BF2 0%, #5F56F5 100%)',
+				'gradient-accent': 'linear-gradient(135deg, #FFFFFF 0%, #E5E5E5 100%)',
+				'gradient-dark': 'linear-gradient(135deg, #171717 0%, #0A0A0A 100%)',
 			},
 			backdropBlur: {
 				xs: '2px',
@@ -94,10 +94,10 @@ export default {
 				},
 				'glow': {
 					'0%, 100%': {
-						boxShadow: '0 0 20px rgba(138, 43, 226, 0.3)'
+						boxShadow: '0 0 20px rgba(255, 255, 255, 0.1)'
 					},
 					'50%': {
-						boxShadow: '0 0 30px rgba(138, 43, 226, 0.6)'
+						boxShadow: '0 0 30px rgba(255, 255, 255, 0.2)'
 					}
 				}
 			},

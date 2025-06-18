@@ -5,33 +5,33 @@
 
 @layer base {
   :root {
-    --background: 218 24% 6%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 3%;
+    --foreground: 0 0% 98%;
 
-    --card: 218 24% 8%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 218 24% 8%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 263 70% 50%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
 
-    --secondary: 218 24% 12%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 0% 9%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 218 24% 12%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 218 24% 12%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 0 0% 12%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 218 24% 15%;
-    --input: 218 24% 15%;
-    --ring: 263 70% 50%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 83%;
 
     --radius: 0.75rem;
   }
@@ -43,7 +43,7 @@
   }
 
   body {
-    @apply bg-frosi-dark text-foreground font-inter;
+    @apply bg-frosi-black text-foreground font-inter;
   }
 
   html {
@@ -53,14 +53,18 @@
 
 @layer utilities {
   .glass-effect {
-    @apply bg-frosi-glass backdrop-blur-md border border-white/10;
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
   }
   
   .gradient-text {
-    @apply bg-gradient-frosi bg-clip-text text-transparent;
+    @apply bg-gradient-accent bg-clip-text text-transparent;
   }
 
   .card-hover {
-    @apply hover:scale-105 hover:shadow-2xl hover:shadow-frosi-purple/20 transition-all duration-300;
+    @apply hover:scale-105 hover:shadow-2xl hover:shadow-white/10 transition-all duration-300;
+  }
+
+  .glow-effect {
+    @apply shadow-lg shadow-white/20;
   }
 }

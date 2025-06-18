@@ -56,10 +56,10 @@ const BestSellers = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-frosi-dark to-frosi-navy">
+    <section className="py-20 bg-gradient-to-b from-frosi-black to-frosi-dark">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Najlepiej Sprzedające Się
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
@@ -77,7 +77,7 @@ const BestSellers = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="bg-gradient-frosi hover:bg-gradient-frosi-hover text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105">
+          <button className="bg-white text-black hover:bg-gray-200 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 glow-effect">
             Zobacz Wszystkie Produkty
           </button>
         </div>
